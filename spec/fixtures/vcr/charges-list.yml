@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<SECRET_KEY>:@test-api.pin.net.au/1/charges
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 26 Apr 2014 03:54:02 GMT
+      Etag:
+      - '"48dc4a38b2eada292023603a1d7072e5"'
+      Server:
+      - Apache/2.2.20 (Ubuntu)
+      Status:
+      - '200'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - User-Agent
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 982570b86257b9b42bd2dbc2451b45b4
+      X-Runtime:
+      - '0.084873'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '9308'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"token":"ch_eAPfoQZAMZOogaCsKJA1qA","success":true,"amount":9995,"currency":"AUD","description":"Flux
+        Capacitor (box of 10)","reference":"","email":"test@example.com","ip_address":"127.0.0.1","created_at":"2014-04-26T03:54:01Z","status_message":"Success","error_message":null,"card":{"token":"card_j2RKCKH0RE4fhWVa0TXo3A","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":12,"expiry_year":2020,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Somewhereville","address_postcode":"30000","address_state":"Somewherestate","address_country":"Australia"},"transfer":[],"amount_refunded":0,"total_fees":330,"merchant_entitlement":9665,"refund_pending":false,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"},{"token":"ch_QpydE2zy2HNhsD5wYq0Kcg","success":true,"amount":9995,"currency":"AUD","description":"Flux
+        Capacitor (box of 10)","reference":"","email":"test@example.com","ip_address":"127.0.0.1","created_at":"2014-04-25T11:20:44Z","status_message":"Success","error_message":null,"card":{"token":"card_nsk22Yj9__pLMJk_s_3wuA","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":12,"expiry_year":2020,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Somewhereville","address_postcode":"30000","address_state":"Somewherestate","address_country":"Australia"},"transfer":[],"amount_refunded":9995,"total_fees":330,"merchant_entitlement":9665,"refund_pending":true,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"},{"token":"ch_1qTqGP78rTDEOpRS3UqTYg","success":false,"amount":4995,"currency":"USD","description":"Flux
+        Capacitor","reference":"","email":"test@test.com","ip_address":"127.0.0.1","created_at":"2014-04-18T05:02:31Z","status_message":"Card
+        Declined","error_message":"Card Declined","card":{"token":"card_4qHBA_9YpWnNZyiro91dSA","scheme":"master","display_number":"XXXX-XXXX-XXXX-0001","expiry_month":12,"expiry_year":2016,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3000","address_state":"Victoria","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":false,"settlement_currency":"AUD"},{"token":"ch_JbiBS-psseIP0KOarnLInw","success":false,"amount":4995,"currency":"USD","description":"Flux
+        Capacitor","reference":"","email":"test@test.com","ip_address":"127.0.0.1","created_at":"2014-04-18T05:02:11Z","status_message":"Card
+        Declined","error_message":"Card Declined","card":{"token":"card_4qHBA_9YpWnNZyiro91dSA","scheme":"master","display_number":"XXXX-XXXX-XXXX-0001","expiry_month":12,"expiry_year":2016,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3000","address_state":"Victoria","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":false,"settlement_currency":"AUD"},{"token":"ch_z-aOTd7eHTAhw9N93976GA","success":false,"amount":4995,"currency":"USD","description":"Flux
+        Capacitor","reference":"","email":"test@test.com","ip_address":"127.0.0.1","created_at":"2014-04-18T05:01:03Z","status_message":"Card
+        Declined","error_message":"Card Declined","card":{"token":"card_4qHBA_9YpWnNZyiro91dSA","scheme":"master","display_number":"XXXX-XXXX-XXXX-0001","expiry_month":12,"expiry_year":2016,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3000","address_state":"Victoria","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":false,"settlement_currency":"AUD"},{"token":"ch_n54BJ6oXoYdv2-Cj-18Ovg","success":false,"amount":4000,"currency":"USD","description":"Flux
+        Capacitor","reference":"","email":"blah@foo.com","ip_address":"127.0.0.1","created_at":"2014-04-18T03:22:55Z","status_message":"Card
+        Declined","error_message":"Card Declined","card":{"token":"card_M3iCsnCZaCtv-GmfRMXQGw","scheme":"master","display_number":"XXXX-XXXX-XXXX-0001","expiry_month":12,"expiry_year":2016,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3000","address_state":"Victoria","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":false,"settlement_currency":"AUD"},{"token":"ch_ZmF4aJAo4VaOtGcPWQ0_XA","success":false,"amount":4000,"currency":"USD","description":"Flux
+        Capacitor","reference":"","email":"blah@foo.com","ip_address":"127.0.0.1","created_at":"2014-04-18T03:20:49Z","status_message":"Card
+        Declined","error_message":"Card Declined","card":{"token":"card_M3iCsnCZaCtv-GmfRMXQGw","scheme":"master","display_number":"XXXX-XXXX-XXXX-0001","expiry_month":12,"expiry_year":2016,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3000","address_state":"Victoria","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":false,"settlement_currency":"AUD"},{"token":"ch_OM3ceXiHE7tXrEIMT4A3Tg","success":true,"amount":4000,"currency":"USD","description":"Flux
+        Capacitor","reference":"","email":"blah@foo.com","ip_address":"127.0.0.1","created_at":"2014-04-18T03:10:14Z","status_message":"Success","error_message":null,"card":{"token":"card_vrwECj2lwc7-4jtibQwOmg","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":12,"expiry_year":2016,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3000","address_state":"Victoria","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"},{"token":"ch_PAqm4MuomHmNFUKS5WolJg","success":true,"amount":1295,"currency":"USD","description":"250g
+        single origin beans","reference":"","email":"blah@foo.com","ip_address":null,"created_at":"2014-04-18T02:54:38Z","status_message":"Success","error_message":null,"card":{"token":"card_FTmy7Wmh1iv0XQkudA_ucA","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":2,"expiry_year":2015,"name":"MR
+        TEST CASE","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3199","address_state":"VIC","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"},{"token":"ch_8Fe2Yn0JnYLHkY55zGuHjA","success":true,"amount":400,"currency":"USD","description":"Flux
+        Capacitor","reference":"","email":"blah@foo.com","ip_address":"127.0.0.1","created_at":"2014-04-18T02:39:39Z","status_message":"Success","error_message":null,"card":{"token":"card_vrwECj2lwc7-4jtibQwOmg","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":12,"expiry_year":2016,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Melbourne","address_postcode":"3000","address_state":"Victoria","address_country":"AU"},"transfer":[],"amount_refunded":0,"total_fees":null,"merchant_entitlement":null,"refund_pending":false,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"},{"token":"ch_Hi9AVnuLZtvrBssyuOKSDQ","success":true,"amount":400,"currency":"AUD","description":"Flux
+        Capacitor","reference":"","email":"blah@foo.com","ip_address":"127.0.0.1","created_at":"2014-04-17T05:45:53Z","status_message":"Success","error_message":null,"card":{"token":"card_bfRXDsFOWN2xieEoZUY4ew","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":2,"expiry_year":2015,"name":"MR
+        TEST CASE","address_line1":"1 Long St","address_line2":"","address_city":"Frankston
+        South","address_postcode":"3199","address_state":"Vic","address_country":"Australia"},"transfer":[],"amount_refunded":0,"total_fees":42,"merchant_entitlement":358,"refund_pending":false,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"},{"token":"ch_8-FRB6RH-QZPbWGPGAjaYw","success":true,"amount":500,"currency":"AUD","description":"test","reference":"","email":"roland@example.com","ip_address":"60.242.140.170","created_at":"2014-04-10T05:09:32Z","status_message":"Success","error_message":null,"card":{"token":"card__MrnyyJ-EJQUj5x5P-j04g","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":5,"expiry_year":2015,"name":"Roland
+        Robot","address_line1":"42 Sevenoaks St","address_line2":"","address_city":"Lathlain","address_postcode":"6454","address_state":"WA","address_country":"Australia"},"transfer":[],"amount_refunded":0,"total_fees":45,"merchant_entitlement":455,"refund_pending":false,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"}],"count":12,"pagination":{"current":1,"previous":null,"next":null,"per_page":25,"pages":1,"count":12}}'
+    http_version: 
+  recorded_at: Sat, 26 Apr 2014 03:54:03 GMT
+recorded_with: VCR 2.9.0

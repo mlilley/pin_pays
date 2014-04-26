@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://<SECRET_KEY>:@test-api.pin.net.au/1/customers
+    body:
+      encoding: UTF-8
+      string: email=test%40example.com&card_token=card_j2RKCKH0RE4fhWVa0TXo3A
+    headers: {}
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 26 Apr 2014 03:53:59 GMT
+      Etag:
+      - '"67849d320643564a8d21c4937d305c4b"'
+      Server:
+      - Apache/2.2.20 (Ubuntu)
+      Status:
+      - '201'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - User-Agent
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 1a282097825fc0f51cf060c21f8ae627
+      X-Runtime:
+      - '0.170537'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '446'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":{"token":"cus_t0jWhn4RECbU3OYIz-B5WA","email":"test@example.com","created_at":"2014-04-26T03:53:59Z","card":{"token":"card_j2RKCKH0RE4fhWVa0TXo3A","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":12,"expiry_year":2020,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Somewhereville","address_postcode":"30000","address_state":"Somewherestate","address_country":"Australia"}}}'
+    http_version: 
+  recorded_at: Sat, 26 Apr 2014 03:54:00 GMT
+recorded_with: VCR 2.9.0

@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<SECRET_KEY>:@test-api.pin.net.au/1/charges/ch_eAPfoQZAMZOogaCsKJA1qA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 26 Apr 2014 03:54:32 GMT
+      Etag:
+      - '"4f98b0bc5e37114331043d3a664df9b0"'
+      Server:
+      - Apache/2.2.20 (Ubuntu)
+      Status:
+      - '200'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - User-Agent
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - a5031dab35117286a1925e3334351585
+      X-Runtime:
+      - '0.034999'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '798'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":{"token":"ch_eAPfoQZAMZOogaCsKJA1qA","success":true,"amount":9995,"currency":"AUD","description":"Flux
+        Capacitor (box of 10)","reference":"","email":"test@example.com","ip_address":"127.0.0.1","created_at":"2014-04-26T03:54:01Z","status_message":"Success","error_message":null,"card":{"token":"card_j2RKCKH0RE4fhWVa0TXo3A","scheme":"master","display_number":"XXXX-XXXX-XXXX-0000","expiry_month":12,"expiry_year":2020,"name":"Mr
+        Test Case","address_line1":"1 Long St","address_line2":"","address_city":"Somewhereville","address_postcode":"30000","address_state":"Somewherestate","address_country":"Australia"},"transfer":[],"amount_refunded":0,"total_fees":330,"merchant_entitlement":9665,"refund_pending":false,"authorisation_expired":false,"captured":true,"settlement_currency":"AUD"}}'
+    http_version: 
+  recorded_at: Sat, 26 Apr 2014 03:54:33 GMT
+recorded_with: VCR 2.9.0
