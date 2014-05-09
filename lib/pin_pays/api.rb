@@ -27,12 +27,12 @@ module PinPays
       end
 
       def api_response(response)
-        raise ApiError.new(response.code, response.parsed_response) unless response.code == 200 || response.code == 201
+        raise ApiError.new(response.code, symbolize_keys(response.parsed_response)) unless response.code == 200 || response.code == 201
         symbolize_keys(response.parsed_response['response'])
       end
 
       def api_paginated_response(response)
-        raise ApiError.new(response.code, response.parsed_response) unless response.code == 200 || response.code == 201
+        raise ApiError.new(response.code, sybolize_keys(response.parsed_response)) unless response.code == 200 || response.code == 201
         { items: symbolize_keys(response.parsed_response['response']), pages: symbolize_keys(response.parsed_response['pagination']) }
       end
 

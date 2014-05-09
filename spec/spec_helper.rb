@@ -5,7 +5,7 @@ require 'webmock/minitest'
 require 'vcr'
 require 'turn'
 
-#SECRET_KEY = 'your-pinpayments-secret-key'
+SECRET_KEY = 'your-pinpayments-secret-key'
 
 Turn.config do |c|
   c.format  = :outline
